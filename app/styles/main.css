@@ -7,6 +7,8 @@
 
 body {
   padding: 0;
+  width: 100%;
+  background-color: #EFEFEF;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -17,11 +19,6 @@ body {
   padding-right: 15px;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-}
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
@@ -41,6 +38,31 @@ body {
   margin: 30px 0;
 }
 
+.container {
+  width: 90%;
+}
+.all_news {
+  width: 30%;
+  display: inline-block;
+  float: left;
+}
+.all_news3 {
+  width: 70%;
+  display: inline-block;
+  float: left;
+}
+.all_news3 h1 {
+  font-family: "Bebas Neue";
+  font-size: 2.5em;
+
+}
+.all_news3 content {
+  width: 100%;
+}
+.all_news3 content object {
+  width: 100%;
+}
+
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
@@ -53,16 +75,47 @@ body {
 
 /* Supporting marketing content */
 .marketing {
-  margin: 40px 0;
+  margin: 0px 0;
 }
 .marketing p + h4 {
   margin-top: 28px;
+}
+.marketing h1 {
+  font-family: "Bebas Neue";
+  font-size: 2.5em;
+
+}
+.marketing ul {
+  list-style-type: none;
+  margin-left: -40px;
+  margin-right: 30px;
+}
+.marketing ul li div h2 {
+  font-family: "Brandon Grotesque";
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.marketing ul li div h3 {
+  font-family: "Brandon Grotesque";
+  font-size: 0.9em;
+  font-weight: 100;
+  margin-top: 0px;
+}
+.marketing ul li a {
+  color: inherit;
+}
+.marketing ul li a:hover {
+  text-decoration: none;
+}
+.marketing ul li div {
+  margin-bottom: 40px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    /*max-width: 730px;*/
   }
 
   /* Remove the padding we set earlier */
@@ -71,10 +124,6 @@ body {
   .footer {
     padding-left: 0;
     padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {

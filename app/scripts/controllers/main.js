@@ -280,5 +280,11 @@ angular.module('appWebApp')
       }
     ];
 
+    $scope.load_home = function (test) {
+
+      document.getElementById("content").innerHTML='<object type="text/html" data="'+ test +'" width="100%" height="1500px" ></object>';
+
+    };
+
     //Load content http://remirobert.com:4242/news?timestamp=150000000000
   });

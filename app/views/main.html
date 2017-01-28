@@ -1,15 +1,11 @@
 <div class="row marketing">
+  <h1>Feed</h1>
   <ul>
     <li ng-repeat="news in newses">
-      <div>
-        <p>
-          Title : {{news.title}}<br>
-          Description : {{news.description}}<br>
-          Date : {{news.pubDate}}<br>
-          Thumbnail : {{news.thumbnail}}<br>
-          <a href="{{news.link}}">See article</a>
-        </p>
-      </div>
+      <a href ="#" ng-click="load_home(news.link)"><div>
+        <h2>• {{news.title}}</h2>
+        <h3>{{news.description}}</h3>
+      </div></a>
     </li>
   </ul>
 </div>
