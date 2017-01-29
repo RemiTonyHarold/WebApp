@@ -17,11 +17,10 @@ angular.module('appWebApp')
     }).then(function successCallback(response) {
       // this callback will be called asynchronously
       // when the response is available
-      console.log(response);
       $scope.newses = response.data;
       $scope.load_home = function (test) {
 
-        document.getElementById("content").innerHTML='<object type="text/html" data="'+ test +'" width="100%" height="1500px" ></object>';
+        document.getElementById("content").innerHTML='<object type="text/html" data="'+ test +'" width="100%" height="4000px" ></object>';
 
       };
     }, function errorCallback(response) {
